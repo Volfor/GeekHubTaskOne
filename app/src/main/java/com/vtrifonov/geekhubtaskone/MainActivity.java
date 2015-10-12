@@ -1,31 +1,34 @@
 package com.vtrifonov.geekhubtaskone;
 
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button btnSend = (Button) findViewById(R.id.btn_send);
-        btnSend.setOnClickListener(new View.OnClickListener() {
+        Button btnTaskOne = (Button) findViewById(R.id.btn_task_one);
+        Button btnTaskTwo = (Button) findViewById(R.id.btn_task_two);
+
+        btnTaskOne.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                EditText helloMessage = (EditText) findViewById(R.id.edit_message);
-
-                Intent intent = new Intent(MainActivity.this, MessageActivity.class).putExtra("msg", helloMessage.getText().toString());
+                Intent intent = new Intent(MainActivity.this, TaskOneActivity.class);
                 startActivity(intent);
             }
         });
-    }
 
+        btnTaskTwo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //TODO: 2nd hometask
+            }
+        });
+    }
 }

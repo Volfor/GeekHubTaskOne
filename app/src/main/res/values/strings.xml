@@ -1,7 +1,9 @@
 <resources>
-    <string name="app_name">GeekHub Task One</string>
+    <string name="app_name">GeekHub</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello, world!</string>
     <string name="edit_message_hint">Enter your hello message here</string>
     <string name="btn_send_text">Send</string>
+    <string name="task_1">Task 1</string>
+    <string name="task_2">Task 2</string>
 </resources>
