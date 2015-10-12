@@ -1,4 +1,4 @@
 # GeekHub
-GeekHub hometask #1.
+GeekHub hometasks.
 
 Author: V. Trifonov.
