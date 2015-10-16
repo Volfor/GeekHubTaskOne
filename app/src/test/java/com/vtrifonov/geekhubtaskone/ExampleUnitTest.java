@@ -1,4 +1,4 @@
-package com.vtrifonov.geekhubtaskone;
+package com.vtrifonov.geekhub;
 
 import org.junit.Test;
 

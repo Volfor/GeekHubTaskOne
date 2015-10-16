@@ -1,4 +1,4 @@
-package com.vtrifonov.geekhubtaskone;
+package com.vtrifonov.geekhub;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;

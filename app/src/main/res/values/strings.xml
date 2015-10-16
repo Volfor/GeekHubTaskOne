@@ -6,4 +6,10 @@
     <string name="btn_send_text">Send</string>
     <string name="task_1">Task 1</string>
     <string name="task_2">Task 2</string>
+    <string name="error">Error</string>
+    <string name="answer">Answer</string>
+    <string name="fibonacci">Fibonacci</string>
+    <string name="factorial">Factorial</string>
+    <string name="task_two_hint">Enter the number</string>
+    <string name="btn_find_text">Find</string>
 </resources>

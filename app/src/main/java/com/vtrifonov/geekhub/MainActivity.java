@@ -1,4 +1,4 @@
-package com.vtrifonov.geekhubtaskone;
+package com.vtrifonov.geekhub;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -27,7 +27,8 @@ public class MainActivity extends AppCompatActivity {
         btnTaskTwo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //TODO: 2nd hometask
+                Intent intent = new Intent(MainActivity.this, TaskTwoActivity.class);
+                startActivity(intent);
             }
         });
     }

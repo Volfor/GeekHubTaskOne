@@ -1,4 +1,4 @@
-package com.vtrifonov.geekhubtaskone;
+package com.vtrifonov.geekhub;
 
 
 import android.content.Intent;
@@ -22,7 +22,8 @@ public class TaskOneActivity extends AppCompatActivity {
             public void onClick(View v) {
                 EditText helloMessage = (EditText) findViewById(R.id.edit_message);
 
-                Intent intent = new Intent(TaskOneActivity.this, MessageActivity.class).putExtra("msg", helloMessage.getText().toString());
+                Intent intent = new Intent(TaskOneActivity.this, MessageActivity.class)
+                        .putExtra("msg", helloMessage.getText().toString());
                 startActivity(intent);
             }
         });
