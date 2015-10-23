@@ -58,6 +58,8 @@ public class TaskTwoActivity extends AppCompatActivity {
         BigInteger tmp;
         BigInteger maxInteger = BigInteger.valueOf(Integer.MAX_VALUE);
 
+        if (a == 0) return 0;
+
         if (a == 1 || a == 2) return 1;
 
         for (int i = 3; i <= a; i++) {

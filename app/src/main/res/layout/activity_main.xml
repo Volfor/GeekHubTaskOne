@@ -30,6 +30,12 @@
             android:layout_height="wrap_content"
             android:text="@string/task_2" />
 
+        <Button
+            android:id="@+id/btn_task_three"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/task_3" />
+
     </LinearLayout>
 
 </LinearLayout>

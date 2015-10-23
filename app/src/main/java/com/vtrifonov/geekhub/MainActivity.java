@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
 
         Button btnTaskOne = (Button) findViewById(R.id.btn_task_one);
         Button btnTaskTwo = (Button) findViewById(R.id.btn_task_two);
+        Button btnTaskThree = (Button) findViewById(R.id.btn_task_three);
 
         btnTaskOne.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -28,6 +29,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, TaskTwoActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        btnTaskThree.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, TaskThreeActivity.class);
                 startActivity(intent);
             }
         });

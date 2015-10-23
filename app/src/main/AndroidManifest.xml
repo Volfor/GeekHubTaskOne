@@ -26,6 +26,9 @@
         <activity
             android:name=".TaskTwoActivity"
             android:label="@string/task_2" />
+        <activity
+            android:name=".TaskThreeActivity"
+            android:label="@string/task_3" />
     </application>
 
 </manifest>

@@ -12,4 +12,5 @@
     <string name="factorial">Factorial</string>
     <string name="task_two_hint">Enter the number</string>
     <string name="btn_find_text">Find</string>
+    <string name="task_3">Task 3</string>
 </resources>
