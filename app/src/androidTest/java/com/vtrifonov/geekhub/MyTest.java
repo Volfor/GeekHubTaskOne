@@ -1,5 +1,7 @@
 package com.vtrifonov.geekhub;
 
+import com.vtrifonov.geekhub.activities.TaskTwoActivity;
+
 import junit.framework.TestCase;
 
 public class MyTest extends TestCase {

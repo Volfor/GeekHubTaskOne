@@ -13,4 +13,7 @@
     <string name="task_two_hint">Enter the number</string>
     <string name="btn_find_text">Find</string>
     <string name="task_3">Task 3</string>
+    <string name="task_4">Task 4</string>
+    <string name="previous">Previous</string>
+    <string name="next">Next</string>
 </resources>

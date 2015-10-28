@@ -1,8 +1,10 @@
-package com.vtrifonov.geekhub;
+package com.vtrifonov.geekhub.activities;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
+
+import com.vtrifonov.geekhub.R;
 
 public class MessageActivity extends AppCompatActivity {
 

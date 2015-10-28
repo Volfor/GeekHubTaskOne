@@ -1,10 +1,12 @@
-package com.vtrifonov.geekhub;
+package com.vtrifonov.geekhub.activities;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.TextView;
+
+import com.vtrifonov.geekhub.R;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -87,7 +89,6 @@ public class TaskThreeActivity extends AppCompatActivity {
 
         TextView text2 = (TextView) findViewById(R.id.text_2);
         text2.setText(strings);
-
     }
 
     private View.OnClickListener clickListener = new View.OnClickListener() {
@@ -109,4 +110,5 @@ public class TaskThreeActivity extends AppCompatActivity {
             }
         }
     };
+
 }
