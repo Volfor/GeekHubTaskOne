@@ -36,6 +36,7 @@ public class TaskOneActivity extends AppCompatActivity {
                 Intent intent = new Intent(TaskOneActivity.this, MessageActivity.class)
                         .putExtra("msg", helloMessage.getText().toString());
                 startActivity(intent);
+                overridePendingTransition(R.anim.slide_in, R.anim.slide_hide);
 
             }
         });
@@ -46,6 +47,7 @@ public class TaskOneActivity extends AppCompatActivity {
         switch (item.getItemId()) {
             case android.R.id.home:
                 finish();
+                overridePendingTransition(R.anim.stay, R.anim.slide_out);
                 return true;
             default:
                 return super.onOptionsItemSelected(item);

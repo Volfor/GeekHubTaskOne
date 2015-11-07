@@ -37,6 +37,7 @@ public class MessageActivity extends AppCompatActivity {
         switch (item.getItemId()) {
             case android.R.id.home:
                 finish();
+                overridePendingTransition(R.anim.stay, R.anim.slide_out);
                 return true;
             default:
                 return super.onOptionsItemSelected(item);

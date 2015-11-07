@@ -86,6 +86,7 @@ public class MainFragment extends Fragment {
         switch (item.getItemId()) {
             case android.R.id.home:
                 getActivity().finish();
+                getActivity().overridePendingTransition(R.anim.stay, R.anim.slide_out);
                 return true;
             default:
                 return super.onOptionsItemSelected(item);

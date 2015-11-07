@@ -101,6 +101,7 @@ public class MainActivity extends AppCompatActivity {
                 break;
             default:
         }
+        overridePendingTransition(R.anim.slide_in, R.anim.slide_hide);
     }
 
     private void setupDrawerContent(NavigationView navigationView) {
