@@ -3,11 +3,11 @@ package com.vtrifonov.geekhub.activities;
 import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
 
-import com.vtrifonov.geekhub.fragments.MainFragment;
 import com.vtrifonov.geekhub.Navigator;
+import com.vtrifonov.geekhub.R;
+import com.vtrifonov.geekhub.fragments.MainFragment;
 import com.vtrifonov.geekhub.fragments.NextFragment;
 import com.vtrifonov.geekhub.fragments.PreviousFragment;
-import com.vtrifonov.geekhub.R;
 
 public class TaskFourActivity extends BaseActivity implements Navigator {
 

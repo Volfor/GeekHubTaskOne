@@ -1,47 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:layout_height="match_parent">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_margin="15dp"
-        android:src="@drawable/geekhub" />
-
-    <LinearLayout
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="15dp"
         android:orientation="vertical">
 
-        <Button
-            android:id="@+id/btn_task_one"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/task_1" />
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/app_bar" />
 
-        <Button
-            android:id="@+id/btn_task_two"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/task_2" />
+            android:layout_height="match_parent"
+            android:gravity="center">
 
-        <Button
-            android:id="@+id/btn_task_three"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/task_3" />
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:src="@drawable/gh_hometasks" />
 
-        <Button
-            android:id="@+id/btn_task_four"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/task_4" />
+        </LinearLayout>
 
     </LinearLayout>
 
-</LinearLayout>
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/navheader"
+        app:menu="@menu/menu_navigation" />
+
+</android.support.v4.widget.DrawerLayout>

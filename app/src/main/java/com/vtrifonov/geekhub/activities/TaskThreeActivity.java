@@ -1,8 +1,11 @@
 package com.vtrifonov.geekhub.activities;
 
 import android.os.Bundle;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.text.TextUtils;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
@@ -23,12 +26,31 @@ public class TaskThreeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_task_three);
 
+        Toolbar toolbar = (Toolbar) findViewById(R.id.app_bar_task_three);
+        setSupportActionBar(toolbar);
+
+        ActionBar supportActionBar = getSupportActionBar();
+        if (supportActionBar != null) {
+            supportActionBar.setDisplayHomeAsUpEnabled(true);
+        }
+
         createAndShowNumbers();
 
         findViewById(R.id.button_1).setOnClickListener(clickListener);
         findViewById(R.id.button_2).setOnClickListener(clickListener);
         findViewById(R.id.button_3).setOnClickListener(clickListener);
         findViewById(R.id.button_4).setOnClickListener(clickListener);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                finish();
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
     }
 
     private void createAndShowNumbers() {

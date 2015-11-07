@@ -1,7 +1,10 @@
 package com.vtrifonov.geekhub.activities;
 
 import android.os.Bundle;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -17,6 +20,14 @@ public class TaskTwoActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_task_two);
+
+        Toolbar toolbar = (Toolbar) findViewById(R.id.app_bar_task_two);
+        setSupportActionBar(toolbar);
+
+        ActionBar supportActionBar = getSupportActionBar();
+        if (supportActionBar != null) {
+            supportActionBar.setDisplayHomeAsUpEnabled(true);
+        }
 
         Button btnFibonacci = (Button) findViewById(R.id.btn_fibonacci);
         Button btnFactorial = (Button) findViewById(R.id.btn_factorial);
@@ -52,6 +63,17 @@ public class TaskTwoActivity extends AppCompatActivity {
                 }
             }
         });
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                finish();
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
     }
 
     public static int fibonacci(int a) throws Exception {
