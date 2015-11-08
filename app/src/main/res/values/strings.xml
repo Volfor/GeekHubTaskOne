@@ -19,4 +19,10 @@
     <string name="next">Next</string>
     <string name="previous">Previous</string>
     <string name="task_5">Task Five</string>
+    <string name="fade_in">Fade In</string>
+    <string name="fade_out">Fade Out</string>
+    <string name="blink">Blink</string>
+    <string name="zoom_in">Zoom In</string>
+    <string name="rotate">Rotate</string>
+    <string name="text_animate">Text to animate</string>
 </resources>

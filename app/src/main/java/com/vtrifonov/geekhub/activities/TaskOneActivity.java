@@ -36,7 +36,7 @@ public class TaskOneActivity extends AppCompatActivity {
                 Intent intent = new Intent(TaskOneActivity.this, MessageActivity.class)
                         .putExtra("msg", helloMessage.getText().toString());
                 startActivity(intent);
-                overridePendingTransition(R.anim.slide_in, R.anim.slide_hide);
+                overridePendingTransition(R.anim.slide_in, R.anim.stay);
 
             }
         });

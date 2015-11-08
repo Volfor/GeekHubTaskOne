@@ -99,9 +99,13 @@ public class MainActivity extends AppCompatActivity {
                 intent = new Intent(MainActivity.this, TaskFourActivity.class);
                 startActivity(intent);
                 break;
+            case R.id.nav_task_five:
+                intent = new Intent(MainActivity.this, TaskFiveActivity.class);
+                startActivity(intent);
+                break;
             default:
         }
-        overridePendingTransition(R.anim.slide_in, R.anim.slide_hide);
+        overridePendingTransition(R.anim.slide_in, R.anim.stay);
     }
 
     private void setupDrawerContent(NavigationView navigationView) {
