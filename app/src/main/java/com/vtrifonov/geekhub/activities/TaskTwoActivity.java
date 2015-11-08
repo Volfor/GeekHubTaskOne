@@ -77,6 +77,12 @@ public class TaskTwoActivity extends AppCompatActivity {
         }
     }
 
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        overridePendingTransition(R.anim.stay, R.anim.slide_out);
+    }
+
     public static int fibonacci(int a) throws Exception {
         int fib1 = 1, fib2 = 1, fib = 1;
 

@@ -54,6 +54,12 @@ public class TaskThreeActivity extends AppCompatActivity {
         }
     }
 
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        overridePendingTransition(R.anim.stay, R.anim.slide_out);
+    }
+
     private void createAndShowNumbers() {
         ArrayList<String> list = new ArrayList<>();
         for (int i = 0; i < values.length; i++) {

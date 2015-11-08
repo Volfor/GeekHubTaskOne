@@ -38,4 +38,10 @@ public class TaskFourActivity extends BaseActivity implements Navigator {
         manager.beginTransaction().replace(R.id.fragment_container, new NextFragment()).addToBackStack(null).commit();
     }
 
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        overridePendingTransition(R.anim.stay, R.anim.slide_out);
+    }
+
 }
