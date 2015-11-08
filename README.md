@@ -3,4 +3,4 @@ GeekHub hometasks.
 
 Author: V. Trifonov.
 
-![Download](https://dl.dropboxusercontent.com/s/7o7k5j9qtpujl3f/qr_code.png "QR-code")
+![Download](https://dl.dropboxusercontent.com/s/t06a39cay1haf91/qr_code.png "QR-code")
