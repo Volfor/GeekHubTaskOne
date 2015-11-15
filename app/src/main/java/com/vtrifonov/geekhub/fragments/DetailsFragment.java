@@ -21,17 +21,9 @@ public class DetailsFragment extends Fragment {
     public final static String ARG_POSITION = "position";
     int mCurrentPosition = -1;
 
-    @Override
-    public void onCreate(@Nullable Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-    }
-
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        if (savedInstanceState != null) {
-            mCurrentPosition = savedInstanceState.getInt(ARG_POSITION);
-        }
         return inflater.inflate(R.layout.fragment_details, container, false);
     }
 
@@ -50,31 +42,16 @@ public class DetailsFragment extends Fragment {
             Toolbar toolbar = (Toolbar) getActivity().findViewById(R.id.details_toolbar);
             ((AppCompatActivity) getActivity()).setSupportActionBar(toolbar);
 
-
             ActionBar supportActionBar = ((AppCompatActivity) getActivity()).getSupportActionBar();
             if (supportActionBar != null) {
                 supportActionBar.setDisplayHomeAsUpEnabled(true);
             }
 
-            int position = getArguments().getInt(ARG_POSITION);
-
             CollapsingToolbarLayout collapsingToolbar =
                     (CollapsingToolbarLayout) getActivity().findViewById(R.id.collapsing_toolbar);
-            collapsingToolbar.setTitle(getResources().getStringArray(R.array.articles_array)[position]);
+            collapsingToolbar.setTitle(getResources().getStringArray(R.array.articles_array)[mCurrentPosition]);
             collapsingToolbar.setExpandedTitleTextAppearance(R.style.CollapsedAppBar);
         }
-    }
-
-    @Override
-    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
-        super.onActivityCreated(savedInstanceState);
-    }
-
-    @Override
-    public void onSaveInstanceState(Bundle outState) {
-        super.onSaveInstanceState(outState);
-
-        outState.putInt(ARG_POSITION, mCurrentPosition);
     }
 
     public void updateDetailsView(int position) {

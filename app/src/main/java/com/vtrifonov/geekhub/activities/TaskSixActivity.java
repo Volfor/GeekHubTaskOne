@@ -32,25 +32,30 @@ public class TaskSixActivity extends AppCompatActivity implements ArticlesFragme
             if (supportActionBar != null) {
                 supportActionBar.setDisplayHomeAsUpEnabled(true);
             }
+
+            DetailsFragment detailsFragment = (DetailsFragment)
+                    getSupportFragmentManager().findFragmentById(R.id.details_fragment);
+
+            detailsFragment.updateDetailsView(0);
         }
     }
 
     @Override
     public void onArticleSelected(int position) {
-        DetailsFragment detailsFrag = (DetailsFragment)
+        DetailsFragment detailsFragment = (DetailsFragment)
                 getSupportFragmentManager().findFragmentById(R.id.details_fragment);
 
         if (findViewById(R.id.details_fragment) != null) {
-            if (detailsFrag != null) {
-                detailsFrag.updateDetailsView(position);
+            if (detailsFragment != null) {
+                detailsFragment.updateDetailsView(position);
             }
         } else {
-            DetailsFragment newFragment = new DetailsFragment();
+            DetailsFragment newDetailsFragment = new DetailsFragment();
             Bundle args = new Bundle();
             args.putInt(DetailsFragment.ARG_POSITION, position);
-            newFragment.setArguments(args);
+            newDetailsFragment.setArguments(args);
             getSupportFragmentManager().beginTransaction()
-                    .replace(R.id.articles_container, newFragment)
+                    .replace(R.id.articles_container, newDetailsFragment)
                     .addToBackStack(null)
                     .commit();
         }
