@@ -25,5 +25,10 @@
             android:id="@+id/nav_task_five"
             android:icon="@drawable/ic_looks_5_black_24dp"
             android:title="@string/task_5" />
+
+        <item
+            android:id="@+id/nav_task_six"
+            android:icon="@drawable/ic_looks_6_black_24dp"
+            android:title="@string/task_6" />
     </group>
 </menu>

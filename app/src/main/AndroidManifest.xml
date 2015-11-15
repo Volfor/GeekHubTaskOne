@@ -35,6 +35,9 @@
         <activity
             android:name=".activities.TaskFiveActivity"
             android:label="@string/task_5" />
+        <activity
+            android:name=".activities.TaskSixActivity"
+            android:label="@string/task_6" />
     </application>
 
 </manifest>

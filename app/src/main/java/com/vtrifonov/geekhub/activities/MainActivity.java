@@ -112,6 +112,10 @@ public class MainActivity extends AppCompatActivity {
                 intent = new Intent(MainActivity.this, TaskFiveActivity.class);
                 startActivity(intent);
                 break;
+            case R.id.nav_task_six:
+                intent = new Intent(MainActivity.this, TaskSixActivity.class);
+                startActivity(intent);
+                break;
             default:
         }
         overridePendingTransition(R.anim.slide_in, R.anim.stay);

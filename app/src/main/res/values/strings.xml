@@ -25,4 +25,121 @@
     <string name="zoom_in">Zoom In</string>
     <string name="rotate">Rotate</string>
     <string name="text_animate">Text to animate</string>
+    <string name="task_6">Task Six</string>
+    <string name="txt_description">Description</string>
+
+    <array name="articles_array">
+        <item>Bullet For My Valentine</item>
+        <item>Avenged Sevenfold</item>
+        <item>Atreyu</item>
+        <item>Nobody.one</item>
+        <item>Architects</item>
+        <item>Escape The Fate</item>
+        <item>Adept</item>
+        <item>In Hearts Wake</item>
+        <item>As I Lay Dying</item>
+    </array>
+
+    <array name="details_pictures">
+        <item>@drawable/bullet_for_my_valentine</item>
+        <item>@drawable/avenged_sevenfold</item>
+        <item>@drawable/atreyu</item>
+        <item>@drawable/nobody_one</item>
+        <item>@drawable/architects</item>
+        <item>@drawable/escape_the_fate</item>
+        <item>@drawable/adept</item>
+        <item>@drawable/in_hearts_wake</item>
+        <item>@drawable/as_i_lay_dying</item>
+    </array>
+
+    <array name="details_text">
+        <item>Bullet for My Valentine are a Welsh heavy metal band from Bridgend, formed in 1998.
+            The band is composed of Matthew Tuck (lead vocals, rhythm guitar), Michael Paget (lead
+            guitar, backing vocals), Michael Thomas (drums) and Jamie Mathias (bass guitar). Former
+            members include Nick Crandle and Jason James; both were on bass. They were formed under
+            the name Jeff Killed John and started their music career by covering songs by Metallica
+            and Nirvana. Jeff Killed John recorded six songs which were not released; two of these
+            tracks were reworked later in their career as Bullet for My Valentine. Financial
+            difficulties dictated the name change, which was followed by a change in music
+            direction. In 2002, the band secured a five-album deal with Sony BMG. The band has
+            stated that their music is influenced by classic metal acts such as Metallica, Iron
+            Maiden, and Slayer. The band is part of the Cardiff music scene.
+        </item>
+        <item>Avenged Sevenfold (sometimes abbreviated as A7X) is an American heavy metal band from
+            Huntington Beach, California, formed in 1999. The band\'s current lineup consists of
+            lead
+            vocalist M. Shadows, rhythm guitarist and backing vocalist Zacky Vengeance, lead
+            guitarist and backing vocalist Synyster Gates, bass guitarist Johnny Christ and drummer
+            Brooks Wackerman.
+            They are known for their diverse rock sound and dramatic imagery in album covers and
+            merchandise. Avenged Sevenfold emerged with a metalcore sound on their debut Sounding
+            the Seventh Trumpet but their style had evolved by their third album and first major
+            label release, City of Evil, into a heavy metal and hard rock style.
+        </item>
+        <item>Atreyu is an American metalcore band from Orange County, California formed in 1998.
+            The band consists of vocalist Alex Varkatzas, lead guitarist Dan Jacobs, rhythm
+            guitarist Travis Miguel, bassist Marc McKnight and drummer/vocalist Brandon Saller.
+            They have released six studio albums: Suicide Notes and Butterfly Kisses (2002), The
+            Curse (2004), A Death-Grip On Yesterday (2006), Lead Sails Paper Anchor (2007),
+            Congregation of the Damned (2009), and Long Live (2015)
+        </item>
+        <item>«nobody.one» — инструментальный проект самарского гитариста Сергея Табачникова. Создан
+            в 2004 году. Каждый сезон для работы приглашаются сессионные музыканты. Созданный в 2004
+            году проект «nobody.one» — это сочетание красивых и драйвовых мелодий с изысканными, но
+            неназойливыми гитарными соло, которые никого не смогут оставить равнодушными. Музыка
+            «nobody.one» способна перенести любого человека в другой мир, абсолютно не навязывая
+            образы, а давая возможность фантазировать.
+        </item>
+        <item>Architects are a British metalcore band from Brighton, England. The band currently
+            consists of vocalist Sam Carter, guitarist and keyboardist Tom Searle and his twin
+            brother, drummer Dan Searle, as well as bassist Alex Dean and guitarist Adam
+            Christianson. The band\'s first name was Inharmonic, which was swiftly changed to
+            Counting the Days, and finally to Architects after a couple of years. They have released
+            six studio albums and one split EP with Dead Swans to date.
+        </item>
+        <item>Escape the Fate is an American post-hardcore band from Las Vegas, Nevada, formed in
+            2005 and originally from Pahrump, Nevada. They are signed to Eleven Seven Music. The
+            group consists of Robert Ortiz (drummer), Craig Mabbitt (lead vocalist), TJ Bell (rhythm
+            guitarist and vocalist), Kevin "Thrasher" Gruft (lead guitarist) and touring musician
+            Max Georgiev (bassist). As of 2013, Ortiz is the last founding member in the current
+            line up of the group.
+        </item>
+        <item>Adept is a Swedish metalcore band from Trosa. Founded in 2004, the band consists of
+            Robert Ljung (vocals), Jerry Repo (guitars) Filip Brandelius (bass), Gabriel Hellmark
+            (drums) and Gustav Lithammer (guitars). They\'ve released 3 EP\'s as well as 3 studio
+            albums to date, including Another Year of Disaster in 2009, Death Dealers (which saw a
+            shift in sound from their original post-hardcore influences) in 2011 and their latest,
+            Silence the World, in 2013. In November 2014, they announced that their next album will
+            be released in 2015.
+        </item>
+        <item>In Hearts Wake is an Australian metalcore band from Byron Bay, formed in 2006. They
+            have released two EPs, Into the Storm and The Gateway, and three full-length studio
+            albums, Divination, Earthwalker and Skydancer, as well as a split CD with The BrideIn
+            Hearts Wake were formed in early 2006 composed of five friends that originate from Byron
+            Bay Australia. Most of the band members grew up and played music together from as young
+            as 11 years old, IHW combine a diverse range of musical elements and techniques to
+            create their own passionate sound. Although most non-metal listeners may classify their
+            music as ‘heavy’, they write their music and lyrics about what they believe in. Their
+            lyrics are based on everyday world issues (most that need urgent attending too) such as:
+            peace, identity, relationships, love, solitude, depression, politics, global
+            responsibility, personal experiences and ultimately the possibility of a better
+            world.
+        </item>
+        <item>As I Lay Dying is an American metalcore band from San Diego, California. Founded in
+            2000 by vocalist Tim Lambesis, the establishment of the band\'s first full lineup, which
+            included drummer Jordan Mancino, occurred in 2001. As I Lay Dying has released six
+            albums, one split album, and two compilation albums.
+            As I Lay Dying\'s fourth studio album An Ocean Between Us peaked at No. 8 on the
+            Billboard 200, and No. 1 on the Top Rock chart. The band has performed at events such
+            as Wacken Open Air, With Full Force, Soundwave Festival, Sounds of the Underground,
+            Warped Tour, Bloodstock Open Air and Taste of Chaos. In 2007, As I Lay Dying won the
+            "Ultimate Metal God" award from MTV2 at the first annual "All That Rocks" special; was
+            named "Artist of the Year" at the San Diego Music Awards in 2005, 2007 and 2008; and was
+            nominated for a 2008 Grammy Award for the song "Nothing Left." Their fifth studio album
+            The Powerless Rise was written over a three-year period, and was released in May 2010 to
+            widespread critical acclaim. Their most recent album, Awakened, was released on
+            September 25, 2012.
+        </item>
+    </array>
+
 </resources>
