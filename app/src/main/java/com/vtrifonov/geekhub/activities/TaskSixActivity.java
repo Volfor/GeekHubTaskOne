@@ -18,13 +18,15 @@ public class TaskSixActivity extends AppCompatActivity implements ArticlesFragme
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_task_six);
 
-        getSupportFragmentManager().popBackStack(null, FragmentManager.POP_BACK_STACK_INCLUSIVE);
-
         if (findViewById(R.id.articles_container) != null) {
-            ArticlesFragment articlesFragment = new ArticlesFragment();
-            getSupportFragmentManager().beginTransaction()
-                    .replace(R.id.articles_container, articlesFragment).commit();
+            if (getSupportFragmentManager().findFragmentByTag("details fragment") == null) {
+                ArticlesFragment articlesFragment = new ArticlesFragment();
+                getSupportFragmentManager().beginTransaction()
+                        .replace(R.id.articles_container, articlesFragment).commit();
+            }
         } else {
+            getSupportFragmentManager().popBackStack(null, FragmentManager.POP_BACK_STACK_INCLUSIVE);
+
             Toolbar toolbar = (Toolbar) findViewById(R.id.app_bar_task_six);
             setSupportActionBar(toolbar);
 
@@ -55,7 +57,7 @@ public class TaskSixActivity extends AppCompatActivity implements ArticlesFragme
             args.putInt(DetailsFragment.ARG_POSITION, position);
             newDetailsFragment.setArguments(args);
             getSupportFragmentManager().beginTransaction()
-                    .replace(R.id.articles_container, newDetailsFragment)
+                    .replace(R.id.articles_container, newDetailsFragment, "details fragment")
                     .addToBackStack(null)
                     .commit();
         }
